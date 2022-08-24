@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!--버튼 만들기 run refresh -->
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <link href="static/css/style_texttoimage.css" rel="stylesheet">
+    <title>텍스트투이미지</title>
+</head>
+<body>
+    <div class="test2">Text to Image</div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <main>
+        <div class="paragraph" id="about" style="width: 45%">
+            내담자의 문제 영역 파악, 분석, 치료방법 제시를 위해서는 상담전문가와의 rapport 형성이 필수적이다. 
+            하지만 내담자의 증상이 경미할 때보다 중증일수록 상담전문가와의 rapport 빌드업 자체가 힘든 경우가 많아 상담 초반의 진행 자체가 힘들다. 
+            내담자가 아예 말하기를 거부하거나 상담전문가와 눈도 마주치지 않는 경우가 그러하다. 
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="search">
+            <input type="text" onkeyup="fnEnterkey();" placeholder="검색어 입력">
+            <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/icon/search.png">
+        </div>
+        <script>
+            link = '/lightbox';
+
+            function fnEnterkey() { 
+            if (window.event.keyCode == 13) {
+                location.href = link; 
+            }
+        }
+        </script>
+        <br>
+        <br> 
+        <br> 
+        <button class="button"><a href="/texttoimage">Refresh</a></button>
+        <br>
+        <br>
+        <button class="button" onClick="location.href='/lightbox'">Run</button>
+    </main>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="static/css/style_lightbox.css">
+        <link rel="stylesheet" type="text/css" href="static/css/lightbox.min.css">
+        <script src="js/lightbox-plus-jquery.min.js"></script>
+        <script src="js/javascript_lightbox.js"></script>
+    </head>
+    <body> 
+        <main>
+            <div class="test2">Coloring Image</div>
+            <br>
+            <br>
+            <br>
+            <div class="gallery" style="width: 55%"> <!-- data-title로 주석 추가 -->
+                <a href="img/Giraffe.jpg" data-lightbox="mygallery"><img src="https://source.unsplash.com/400x400?mountain"></a>
+                <a href="img/palette1.jpg" data-lightbox="mygallery"><img src="https://source.unsplash.com/400x400?nature"></a>
+                <a href="img/palette2.jpg" data-lightbox="mygallery"><img src="https://source.unsplash.com/400x400?valley"></a>
+                <a href="img/palette3.jpg" data-lightbox="mygallery"><img src="https://source.unsplash.com/400x400?beach"></a>
+                <a href="img/palette4.jpg" data-lightbox="mygallery"><img src="https://source.unsplash.com/400x400?ocean"></a>
+                <a href="img/palette5.jpg" data-lightbox="mygallery"><img src="https://source.unsplash.com/400x400?water"></a>
+            </div>
+            <br>
+            <br>
+            <button onclick="myprint()">인쇄</button>
+            <script type="text/javascript">
+                function myprint() {
+                    window.print(); 
+                }
+            </script>
+    </main>
+    </body>
+</html>

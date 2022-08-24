@@ -1,0 +1,142 @@
+@font-face {
+    font-family: "BMDOHYEON";
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMDOHYEON.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+} /* 제목: 마음마중물 - 도현체 */
+
+.text {
+    font-family: "BMDOHYEON"; 
+    font-size: 30px; 
+} /* 제목에 맞게 바꿔질 도현체 설정 부분 */
+
+input::placeholder {
+    font-family: "Noto Sans KR";
+    font-size: 15px; 
+    color: black;
+}
+
+html { 
+    color: white; 
+}
+
+.test2 {
+    font-family: "BMDOHYEON"; 
+    font-size: 80px; 
+    color: white; 
+    justify-content: center;
+    align-items: center;
+    position: relative; 
+    text-align: center;
+    top: 60px;
+} /* Text to Image -> position relative로 잡아줘야함 */
+
+body {
+    margin: 0; 
+    width: 100%;
+    height: 100%;
+    background-color: #FA897B;
+    padding: 0 20px 20px 20px;
+    border: 0;
+    position: relative; 
+    overflow: hidden;
+}
+  /* 전체 body 라인 설정 width 100%로 해서 화면 비율 꽉 차게 만들어줬음 */
+
+.paragraph {
+    font-size: 1.0em; 
+    font-family: "Noto Sans KR"; 
+    color: white; 
+    font-weight: 400; 
+    text-align: center;
+    left: 500px; 
+    right: 174px; 
+    margin: auto; 
+    border-radius: 30px;
+}
+
+.container { 
+    flex-wrap: wrap; 
+}
+
+/* label 스타일 조정 */
+label {
+    cursor: pointer;
+    font-size: 1em;
+}
+
+/* 못생긴 기존 input 숨기기 */
+#chooseFile {
+    visibility: hidden;
+}
+
+.search {
+    position: relative;
+    width: 500px;
+    justify-content: center;
+    align-items: center;
+    position: relative; 
+    margin: auto; 
+}
+/* margin: auto 추가하니까 가운데 정렬 됐음. width 조절해서 크기 정하기 */
+
+input {
+    width: 100%;
+    border: 1px solid #bbb;
+    border-radius: 8px;
+    padding: 10px 12px;
+    font-size: 14px;
+    justify-content: center;
+    align-items: center;
+    position: relative; 
+
+}
+
+img {
+    position : absolute;
+    width: 17px;
+    top: 10px;
+    right: 12px;
+    margin: 0;
+}
+
+a {
+    text-decoration-line: none;
+}
+
+/* From uiverse.io */
+.button {
+    padding: 1.3em 3em;
+    font-size: 12px;
+    height: 3em;
+    width: 8em;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 30px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    display: flex;
+    margin: auto;
+    position: relative;
+    font-family: "Noto Sans KR";
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+button:hover {
+    background-color: #FA897B;
+    box-shadow: 0px 15px 20px rgba(250, 137, 123, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+}
+
+button:active {
+    transform: translateY(-1px);
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <link href="static/css/style_imagetoimage.css" rel="stylesheet">
+    <script src="js/javascript_imagetoimage.js"></script>
+    <title>이미지투이미지</title>
+  </head>
+  <body>
+    <main>
+      <div class="test2">Image to Image</div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <div class="paragraph" id="about" style="width: 45%">
+        내담자의 문제 영역 파악, 분석, 치료방법 제시를 위해서는 상담전문가와의 rapport 형성이 필수적이다. 
+        하지만 내담자의 증상이 경미할 때보다 중증일수록 상담전문가와의 rapport 빌드업 자체가 힘든 경우가 많아 상담 초반의 진행 자체가 힘들다. 
+      </div>
+      <br>  
+      <br>
+      <br>
+      <form method="post" enctype="multipart/form-data">
+          <div class="button2">
+            <label for="chooseFile">
+              Image Upload
+            </label>
+          </div>
+            <input type="file" id="chooseFile" name="chooseFile" accept="image/*" onchange="loadFile(this)">
+      </form>   
+    <br> 
+      <div class="button2"><a href='/imagetoimage'>Refresh</a></div>
+    <br>
+    <br>
+      <div class="button2" onClick="location.href='/lightbox'">Run</div> <!-- RUN 실행되어야 함 -->
+    </main>
+  </body>
+</html>
